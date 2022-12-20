@@ -7,12 +7,12 @@ Process data from Source: iptoasn.com
 
 ## Need
 - Your Amazon dot should be able to communicate with the <amazon_aws>, but no other internet [network|server|service]?
-- Your iPhone should be able to communicate with the <apple> cloud, but not with any of the <facebook> [networks|server]?
+- Your iPhone should be able to communicate with the <apple_icloud>, but not with any of the <facebook_asn> [networks|server]?
 - Non of your devices should communicate with:
 	- declard but usually not connected, but often abused  <dod>  (US Department of Defense) network ranges?
 	- china great firewall <country_cn> networks?
 	- rfc1918 <notconnected> networks [private|martians|bogon] [asn:0] via your ISP uplink?
-- you want to [silently] [log|limit|stat] all your traffic with a specific full asn for pcap [analysis|decrypt|proof]?
+- you want to \[silently\] \[log|limit|stat\] all your traffic with a specific full asn for pcap [analysis|decrypt|proof]?
 - your chatty TV should only allowed to communicate with <netflix_ipv6>, via a specific [ISP|route|limit]?
 - your smtp mail server takes no interest in offerings from <country_ru> <country_in> [unasked] inbound connects?
 
