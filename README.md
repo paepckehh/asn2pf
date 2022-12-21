@@ -5,7 +5,13 @@
 Dynamicly generate optimized firewall tables based on the full internet bgp prefix & asn tables.
 Process data from Source: iptoasn.com 
 
+## Install 
+```
+go install paepcke.de/asn2pf/cmd/asn2pf@latest
+```
+
 ## Need
+
 - Your Amazon dot should be able to communicate with the <amazon_aws>, but no other internet [network|server|service]?
 - Your iPhone should be able to communicate with the <apple_icloud>, but not with any of the <facebook_asn> [networks|server]?
 - Non of your devices should communicate with:
@@ -17,9 +23,11 @@ Process data from Source: iptoasn.com
 - your smtp mail server takes no interest in offerings from <country_ru> <country_in> [unasked] inbound connects?
 
 ## You already tried [< random dns blocker >] ?
+
 - Industrie already adapted to this via 'securing' the DNS service (DoT/DoH/...). 
 
 ## Keypoints 
+
 - Supports any pf based firwall: macos, openbsd, freebsd, netbsd, pfsense, opensense, network focused linux distros.
 - Fast (parses more than One Million prefixes in millisecons).
 - Produces optimized tables for building with pf an optimal radix tree.
@@ -35,4 +43,4 @@ asn2pf block drop log facebook amazon rfc1918 dod country:cn country:ru asn:1333
 
 # TODO: 
 - split and migrate prefix and asn table sources from all original authoritative creator sources (arin, ...)
-- use the asn radix tree package also for serialized/compresses/storage/publish
+- use the asn radix tree package also for serialized/compresses/storage/published intermeds
