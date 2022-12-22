@@ -1,16 +1,17 @@
-# Overview
+# OVERVIEW
 
 [paepche.de/asn2pf](https://paepcke.de/asn2pf)
 
 Dynamicly generate optimized firewall tables based on the full internet bgp prefix & asn tables.
 Process data from Source: iptoasn.com 
 
-## Install 
+# INSTALL 
+
 ```
 go install paepcke.de/asn2pf/cmd/asn2pf@latest
 ```
 
-## Need
+# WHY ?
 
 - Your Amazon dot should be able to communicate with the <amazon_aws>, but no other internet [network|server|service]?
 - Your iPhone should be able to communicate with the <apple_icloud>, but not with any of the <facebook_asn> [networks|server]?
@@ -26,14 +27,14 @@ go install paepcke.de/asn2pf/cmd/asn2pf@latest
 
 - Industrie already adapted to this via 'securing' the DNS service (DoT/DoH/...). 
 
-## Keypoints 
+# DETAILS
 
 - Supports any pf based firwall: macos, openbsd, freebsd, netbsd, pfsense, opensense, network focused linux distros.
 - Fast (parses more than One Million prefixes in millisecons).
 - Produces optimized tables for building with pf an optimal radix tree.
 - 100 % pure golang, simple, easy to review code
 
-# Showtime 
+# SHOWTIME
 
 ```Shell 
 asn2pf block drop log facebook amazon rfc1918 dod country:cn country:ru asn:13335
@@ -42,5 +43,9 @@ asn2pf block drop log facebook amazon rfc1918 dod country:cn country:ru asn:1333
 ```
 
 # TODO: 
-- split and migrate prefix and asn table sources from all original authoritative creator sources (arin, ...)
-- use the asn radix tree package also for serialized/compresses/storage/published intermeds
+- [] split and migrate prefix and asn table sources from all original authoritative creator sources (arin, ...)
+- [] use the asn radix tree package also for serialized/compresses/storage/published intermeds
+
+# CONTRIBUTION
+
+Yes, Please! PRs Welcome! 
