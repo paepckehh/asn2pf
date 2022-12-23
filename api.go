@@ -1,4 +1,4 @@
-// package asn2pf ...
+// package asn2pf produces pf firewall files from iptoasn.com tables
 package asn2pf
 
 import (
