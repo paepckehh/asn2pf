@@ -1,4 +1,0 @@
-[access:filesystem]
-[security:high:syscall]
-[security:medium:reflect]
-[security:medium:runtime]
