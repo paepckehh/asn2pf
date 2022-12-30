@@ -11,7 +11,7 @@ Process data from Source: [iptoasn.com](https://iptoasn.com)
 go install paepcke.de/asn2pf/cmd/asn2pf@latest
 ```
 
-# DOWNLOAD (prebuild)
+### DOWNLOAD (prebuild)
 
 [github.com/paepckehh/asn2pf/releases](https://github.com/paepckehh/asn2pf/releases)
 
