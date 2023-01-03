@@ -26,9 +26,6 @@ func out(msg string) { os.Stdout.Write([]byte(msg + _linefeed)) }
 // info ...
 func info(msg string) { out(_inf + msg) }
 
-// errOut ...
-func errOut(msg string) { out(_err + msg) }
-
 // pad ...
 func pad(in string, l int) string {
 	for len(in) < l {

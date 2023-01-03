@@ -38,7 +38,7 @@ func getSourceDB(store string, noip4, noip6 bool) (srcdb []Source) {
 		store += "/"
 	}
 	for _, n := range getNodes() {
-		src := Source{}
+		var src Source
 		if !isEnv(_ENV_NO_IPV4) && !noip4 {
 			src = Source{
 				File:      store + "ip2asn-v4.tsv.gz",
@@ -114,15 +114,20 @@ func fetchSRC(src Source) bool {
 	}
 
 	// setup limits and targetslice
+	var data []byte
 	size := src.SizeMB * 1024 * 1024
 	maxsize := int(size * 1.8)
 	minsize := int(size * 0.6)
-	data := make([]byte, 0, maxsize)
 
 	// fetch, write file
 	client.Timeout = time.Duration(30 * time.Second)
 	request.Method = "GET"
 	body, err := client.Do(request)
+	if err != nil {
+		errOut("[DB] unable to fetch db [" + src.Url + "] [FETCH BODY FAIL]")
+		errOut(err.Error())
+		return false
+	}
 	data, err = io.ReadAll(body.Body)
 	if err != nil || body.StatusCode > 299 {
 		errOut("[DB] unable to fetch db [" + src.Url + "] [FETCH BODY FAIL]")

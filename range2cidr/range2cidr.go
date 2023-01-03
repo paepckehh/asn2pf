@@ -420,14 +420,6 @@ func parseIP(s string) (IP, error) {
 	return IP{}, parseIPError{in: s, msg: "unable to parse IP"}
 }
 
-func mustParseIP(s string) IP {
-	ip, err := parseIP(s)
-	if err != nil {
-		panic(err)
-	}
-	return ip
-}
-
 type parseIPError struct {
 	in  string
 	msg string
@@ -486,10 +478,6 @@ func appendRangePrefixes(dst []ipPrefix, makePrefix prefixMaker, a, b uint128) [
 
 func (ip IP) is4() bool {
 	return ip.z == z4
-}
-
-func (ip IP) is4in6() bool {
-	return ip.is6() && ip.addr.hi == 0 && ip.addr.lo>>32 == 0xffff
 }
 
 func (ip IP) is6() bool {
