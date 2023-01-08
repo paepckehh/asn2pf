@@ -21,5 +21,4 @@
 Makefile
 doc
 vendor
-asn2pf
 cmd/asn2pf/asn2pf
