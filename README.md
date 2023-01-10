@@ -1,6 +1,6 @@
 # OVERVIEW
 
-[paepche.de/asn2pf](https://paepcke.de/asn2pf)
+[paepche.de/asn2pf](https://paepcke.de/asn2pf/)
 
 Dynamicly generate optimized firewall tables based on the full internet bgp prefix & asn tables.
 Process data from Source: [iptoasn.com](https://iptoasn.com)
