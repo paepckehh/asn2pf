@@ -47,8 +47,13 @@ asn2pf block drop log facebook amazon rfc1918 dod country:cn country:ru asn:1333
 ```
 
 # TODO: 
+
 [] split and migrate prefix and asn table sources from all original authoritative creator sources (arin, ...)
 [] use the asn radix tree package also for serialized/compresses/storage/published intermeds
+
+# DOCS
+
+[pkg.go.dev/paepcke.de/asn2pf](https://pkg.go.dev/paepcke.de/asn2pf)
 
 # CONTRIBUTION
 
