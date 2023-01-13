@@ -19,7 +19,6 @@ const (
 	_linefeed = "\n"
 )
 
-
 // getFileScanner ...
 func getFileScanner(name string) (s *bufio.Scanner, err error) {
 	r, err := getReader(name)
@@ -58,8 +57,7 @@ func getReader(name string) (io.Reader, error) {
 
 //
 // LITTLE GENERIC IO HELPER
-// 
-
+//
 
 // out ...
 func out(msg string) { os.Stdout.Write([]byte(msg + _linefeed)) }
