@@ -1,4 +1,3 @@
-// package asn2pf ...
 package asn2pf
 
 import (
@@ -20,19 +19,6 @@ const (
 	_linefeed = "\n"
 )
 
-// out ...
-func out(msg string) { os.Stdout.Write([]byte(msg + _linefeed)) }
-
-// info ...
-func info(msg string) { out(_inf + msg) }
-
-// pad ...
-func pad(in string, l int) string {
-	for len(in) < l {
-		in = in + " "
-	}
-	return in
-}
 
 // getFileScanner ...
 func getFileScanner(name string) (s *bufio.Scanner, err error) {
@@ -68,4 +54,23 @@ func getReader(name string) (io.Reader, error) {
 		return r, errors.New("[compress] [scanner] unable to read file [" + name + "] [" + err.Error() + "]")
 	}
 	return r, nil
+}
+
+//
+// LITTLE GENERIC IO HELPER
+// 
+
+
+// out ...
+func out(msg string) { os.Stdout.Write([]byte(msg + _linefeed)) }
+
+// info ...
+func info(msg string) { out(_inf + msg) }
+
+// pad ...
+func pad(in string, l int) string {
+	for len(in) < l {
+		in = in + " "
+	}
+	return in
 }
