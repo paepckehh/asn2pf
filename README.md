@@ -1,4 +1,5 @@
 # OVERVIEW
+[![Go Report Card](https://goreportcard.com/badge/paepcke.de/asn2pf)](https://goreportcard.com/report/paepcke.de/asn2pf)
 
 [paepche.de/asn2pf](https://paepcke.de/asn2pf/)
 
