@@ -1,6 +1,6 @@
 module paepcke.de/asn2pf
 
-go 1.21
+go 1.19
 
 require github.com/klauspost/compress v1.15.14
 
