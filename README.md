@@ -1,7 +1,7 @@
 # OVERVIEW
 [![Go Reference](https://pkg.go.dev/badge/paepcke.de/asn2pf.svg)](https://pkg.go.dev/paepcke.de/asn2pf) [![Go Report Card](https://goreportcard.com/badge/paepcke.de/asn2pf)](https://goreportcard.com/report/paepcke.de/asn2pf) [![Go Build](https://github.com/paepckehh/asn2pf/actions/workflows/golang.yml/badge.svg)](https://github.com/paepckehh/asn2pf/actions/workflows/golang.yml)
 
-[paepche.de/asn2pf](https://paepcke.de/asn2pf/)
+[paepcke.de/asn2pf](https://paepcke.de/asn2pf/)
 
 Dynamicly generate optimized firewall tables based on the full internet bgp prefix & asn tables.
 Process data from Source: [iptoasn.com](https://iptoasn.com)
