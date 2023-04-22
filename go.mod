@@ -2,7 +2,7 @@ module paepcke.de/asn2pf
 
 go 1.20
 
-require github.com/klauspost/compress v1.16.4
+require github.com/klauspost/compress v1.16.5
 
 require (
 	golang.org/x/crypto v0.8.0 // indirect
