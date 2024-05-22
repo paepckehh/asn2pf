@@ -1,0 +1,23 @@
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Language                              Files     Lines   Blanks  Comments     Code Complexity Complexity/Lines
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Go                                       10      1746      144       154     1448        321           206.05
+YAML                                      5       132        0         0      132          0             0.00
+Markdown                                  4       119       38         0       81          0             0.00
+gitignore                                 2        27        0         0       27          0             0.00
+License                                   1        27        3         0       24          0             0.00
+Shell                                     1        42        0        38        4          0             0.00
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Total                                    23      2093      185       192     1716        321           206.05
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Total Physical Source Lines of Code (SLOC)                     = 1,716
+Development Effort Estimate, Person-Years (Person-Months)      = 0.35 (4.23)
+ (Basic COCOMO model, Person-Months = 2.40*(KSLOC**1.05)*1.00)
+Schedule Estimate, Years (Months)                              = 0.36 (4.33)
+ (Basic COCOMO model, Months = 2.50*(person-months**0.38))
+Estimated Average Number of Developers (Effort/Schedule)       = 0.98
+Total Estimated Cost to Develop                                = $47,625
+ (average salary = $56,286/year, overhead = 2.40)
+Processed 55013 bytes, 0.055 megabytes (SI)
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
