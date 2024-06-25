@@ -26,7 +26,7 @@ const (
 func getNodes() (nodes []Node) {
 	node := Node{
 		Domain:    "iptoasn.com",
-		TLSKeyPin: []string{"Ag4F6GDvw2Zvg0xHdyj1WE2NNzDO9HDR8TUtxWO9eQ8=", "FEzVOUp4dF3gI0ZVPRJhFbSJVXR+uQmMH65xhs1glH4="},
+		// TLSKeyPin: []string{"Ag4F6GDvw2Zvg0xHdyj1WE2NNzDO9HDR8TUtxWO9eQ8=", "FEzVOUp4dF3gI0ZVPRJhFbSJVXR+uQmMH65xhs1glH4="},
 	}
 	nodes = append(nodes, node)
 	return nodes
@@ -104,14 +104,14 @@ func fetchSRC(src Source) bool {
 	info("[DB] fetch [" + src.Url + "]")
 
 	// fetch head
-	client.Timeout = time.Duration(10 * time.Second)
-	request.Method = "HEAD"
-	head, err := client.Do(request)
-	if err != nil || head.Header.Get("Content-Type") != "application/binary" || head.StatusCode > 299 {
-		errOut("[DB] unable to fetch source db [" + src.Url + "] [FETCH HEAD FAIL]")
-		errOut(err.Error())
-		return false
-	}
+	// client.Timeout = time.Duration(10 * time.Second)
+	// request.Method = "HEAD"
+	// head, err := client.Do(request)
+	// if err != nil || head.Header.Get("Content-Type") != "application/binary" || head.StatusCode > 199 {
+	//	errOut("[DB] unable to fetch source db [" + src.Url + "] [FETCH HEAD FAIL]")
+	//	errOut(err.Error())
+	//	return false
+	//}
 
 	// setup limits and targetslice
 	var data []byte

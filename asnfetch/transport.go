@@ -7,7 +7,7 @@ import (
 	"crypto/tls"
 	"crypto/x509"
 	"encoding/base64"
-	"errors"
+	//"errors"
 	"net/http"
 	"net/url"
 )
@@ -21,16 +21,16 @@ func getTlsConf(keyPin string) *tls.Config {
 		MinVersion:             tls.VersionTLS13,
 		MaxVersion:             tls.VersionTLS13,
 		CipherSuites:           []uint16{tls.TLS_CHACHA20_POLY1305_SHA256},
-		CurvePreferences:       []tls.CurveID{tls.X25519},
+		//CurvePreferences:       []tls.CurveID{tls.X25519},
 	}
-	if keyPin != _empty {
-		tlsConfig.VerifyConnection = func(state tls.ConnectionState) error {
-			if !pinVerifyState(keyPin, &state) {
-				return errors.New("keypin verification failed")
-			}
-			return nil
-		}
-	}
+	//if keyPin != _empty {
+	//	tlsConfig.VerifyConnection = func(state tls.ConnectionState) error {
+	//		if !pinVerifyState(keyPin, &state) {
+	//			return errors.New("keypin verification failed")
+	//		}
+	//		return nil
+	//	}
+	//}
 	return tlsConfig
 }
 

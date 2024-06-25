@@ -9,7 +9,7 @@ go build
 # export ASN2PF_SRC=/usr/store/doc/asn
 #
 # setup pf table out file
-export ASN2PF_FILE=/tmp/pf.asn-tables
+export ASN2PF_FILE=./pf.asn-tables
 #
 # we do not need the ipv6 rules yet
 # export NO_IPV4=true
